@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Londrina+Sketch&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background-image: url(6481101_919.jpg); */
+  background-color: #588157;
+  background-size: cover;
+}
+
+body:focus {
+  outline: none;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#tblBingo {
+  border-collapse: collapse;
+  height: 25rem;
+  width: 25rem;
+  text-align: center;
+  font-size: 22pt;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+#tblBingo td {
+  padding: 0.3rem;
+}
+
+.cell-format {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  background-color: #a4a6a626;
+  border: 2px solid #ffffff;
+}
+
+.cell-format:hover {
+  background-color: #3a5a40af;
+  color: white;
+  filter: blur(0.5px);
+  border-color: #233827;
+}
+
+.letter-div {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letters-bingo {
+  padding: 0 1.3rem;
+  font-size: 40pt;
+  display: none;
+  color: #ffffff;
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.strickout {
+  text-decoration: line-through;
+  color: #233827;
+  font-size: 18pt;
+  pointer-events: none;
+  border-color: #233827;
+}
+
+.show-bingo {
+  display: inline;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.reset-btn {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+.reset-btn button {
+  border: none;
+  padding: 20px 40px 20px 40px;
+  border-radius: 1rem;
+  background-color: #ffb703;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 700;
+}
