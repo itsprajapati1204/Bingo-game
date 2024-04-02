@@ -68,8 +68,8 @@ cell.forEach(e => {
 
             winningIterator++;
             if(winningIterator === 5) {
-                alert('👽B I N G O👽--YOU WIN THE GAME')
-                location.reload();
+                alert('B I N G O--YOU WIN THE GAME')
+                // location.reload();
             }
         }
     })
@@ -96,13 +96,13 @@ function matchWin() {
 }
 
 
-console.log(arr)
+console.log(arr);
 
-const resetGame =() =>{
-    turnO=true;
-    enabledBoxes();
-    msgContainer.classList.add("hide");
-  
-  };
 
-  newgamebtn.addEventListener("click",resetGame);
+    resetBtn.addEventListener("click",()=>
+    {
+        location.reload();
+    });
+
+
+ 
